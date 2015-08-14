@@ -9,5 +9,6 @@ print 'list of major programs avalilable: '
 
 table = testPage.find_all('a', class_="sitemaplink");
 
-aeroTest = BeautifulSoup(webUrl + table[0].get('href'))
+for link in table:
+	print link.string
 
